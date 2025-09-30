@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign In</title>
+    <meta name="description" content="Sign in to continue to Recipe Explorer." />
+    <link rel="icon" href="./favicon.ico" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sign In - Recipe Explorer" />
+    <meta property="og:description" content="Sign in to continue to Recipe Explorer." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./og-placeholder.png" />
+    <meta property="og:url" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="screen" role="document">
+      <!-- Simulated mobile canvas respecting Figma frame 375x812 with responsive scaling -->
+      <main id="main" class="canvas" aria-labelledby="page-title">
+        <!-- Status Bar (decorative) -->
+        <div class="status-bar" aria-hidden="true">
+          <div class="time">19:27</div>
+          <div class="status-icons">
+            <span class="wifi" aria-hidden="true"></span>
+            <span class="signal" aria-hidden="true"></span>
+            <span class="battery" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <!-- Title group -->
+        <header class="title-group">
+          <h1 id="page-title" class="hello">Hello,</h1>
+          <p class="welcome">Welcome Back!</p>
+        </header>
+
+        <!-- Email input (from Figma Input field component) -->
+        <div class="field-group">
+          <label for="email" class="field-label">Email</label>
+          <div class="field-rect">
+            <input id="email" name="email" type="email" class="field-input" placeholder="Enter Email" autocomplete="email" required />
+          </div>
+        </div>
+
+        <!-- Password input (from Figma Input field component) -->
+        <div class="field-group">
+          <label for="password" class="field-label">Enter Password</label>
+          <div class="field-rect with-toggle">
+            <input id="password" name="password" type="password" class="field-input" placeholder="Enter Password" autocomplete="current-password" required minlength="6" />
+            <button type="button" class="toggle-visibility" aria-label="Show password" aria-pressed="false">Show</button>
+          </div>
+        </div>
+
+        <!-- Forgot Password -->
+        <p class="forgot">
+          <a href="#" class="forgot-link">Forgot Password?</a>
+        </p>
+
+        <!-- Primary Big Button -->
+        <button type="button" class="btn-primary" id="submitBtn" aria-label="Sign In">
+          <span class="btn-label">Sign In</span>
+          <span class="btn-icon" aria-hidden="true">➔</span>
+        </button>
+
+        <!-- Or Sign in With line -->
+        <div class="divider">
+          <span class="line"></span>
+          <span class="divider-label">Or Sign in With</span>
+          <span class="line"></span>
+        </div>
+
+        <!-- Social buttons (Google, Facebook) -->
+        <div class="social-row" role="group" aria-label="Sign in with">
+          <button type="button" class="social-btn" aria-label="Continue with Google">
+            <span class="social-bg"></span>
+            <img class="social-icon" src="../../assets/figmaimages/figma_image_13_39.png" alt="" aria-hidden="true" />
+          </button>
+          <button type="button" class="social-btn" aria-label="Continue with Facebook">
+            <span class="social-bg"></span>
+            <img class="social-icon" src="../../assets/figmaimages/figma_image_13_61.png" alt="" aria-hidden="true" />
+          </button>
+        </div>
+
+        <!-- Sign up prompt -->
+        <p class="signup">
+          Don’t have an account? <a href="#" class="signup-link">Sign up</a>
+        </p>
+
+        <!-- Home Indicator (decorative) -->
+        <div class="home-indicator" aria-hidden="true">
+          <span class="home-bar"></span>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
